@@ -188,6 +188,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "matriz_led"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "embedded-hal 1.0.0",
+ "microbit-v2",
+ "nrf52833-hal",
+ "nrf52833-pac",
+ "panic-halt",
+ "panic-rtt-target",
+ "rtt-target",
+ "serial-setup",
+]
+
+[[package]]
 name = "microbit-common"
 version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
