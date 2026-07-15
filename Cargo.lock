@@ -172,6 +172,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "introduccion"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "embedded-hal 1.0.0",
+ "microbit-v2",
+ "nrf52833-hal",
+ "nrf52833-pac",
+ "panic-halt",
+ "panic-rtt-target",
+ "rtt-target",
+ "serial-setup",
+]
+
+[[package]]
 name = "microbit-common"
 version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -216,6 +232,7 @@ dependencies = [
  "cfg-if",
  "cortex-m",
  "embedded-dma",
+ "embedded-hal 0.2.7",
  "embedded-hal 1.0.0",
  "embedded-io",
  "embedded-storage",
@@ -274,19 +291,6 @@ checksum = "9a8116ffce1f89818647b84fba66d16cfdf3c0bee3c9320e606588d3e7415ce7"
 dependencies = [
  "critical-section",
  "portable-atomic",
- "rtt-target",
-]
-
-[[package]]
-name = "plantilla"
-version = "0.1.0"
-dependencies = [
- "cortex-m",
- "cortex-m-rt",
- "embedded-hal 1.0.0",
- "microbit-v2",
- "panic-halt",
- "panic-rtt-target",
  "rtt-target",
 ]
 
@@ -354,6 +358,15 @@ name = "semver-parser"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3"
+
+[[package]]
+name = "serial-setup"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "embedded-io",
+ "microbit-v2",
+]
 
 [[package]]
 name = "stable_deref_trait"

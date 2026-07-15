@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
-  "src/00-plantilla",
+    "src/00-Conocer-el-Sistema",
 
 ]
 
