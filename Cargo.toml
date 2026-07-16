@@ -3,6 +3,8 @@ resolver = "2"
 members = [
     "src/00-Conocer-el-Sistema",
     "src/01-Matriz-Led",
+    "src/02-Botones",
+    "src/03-Led",
 
 ]
 
