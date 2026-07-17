@@ -97,7 +97,7 @@ Al realizar el cableado, se recomienda desconectar todas las fuentes de alimenta
 
 >**El puerto a usar sería el P0, el pin a utilizar el 02.**
 
-Veamos la siguiente imagen para entenderlo mejor. Si partimos de la placa de expansión (Expansion connector), queremos usar el conector **P0** (ver imagen anterior, cable amarillo) que se rotula como **RING0**. Esta marca nos lleva en la MCU al pin 02 del puerto P0. Por tanto, activando y desactivando este pin de la MCU lograremos encender/apagar el led de la placa.
+Veamos la siguiente imagen para entenderlo mejor. Si partimos de la placa de expansión (Expansion connector), queremos usar el conector **P0** (ver imagen anterior, cable amarillo) que se rotula como **RING0**. Esta marca nos lleva en la MCU al pin 02 del puerto P0. Por tanto, activando y desactivando este pin de la MCU lograremos encender/apagar el led de la placa (Board.edge.e00).
 <p style="text-align: center;">
     <img title="micro:bit" src="./img/circuito_01.png" alt="Micro:bit" />
 </p>
