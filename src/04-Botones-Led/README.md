@@ -31,6 +31,8 @@ El siguiente diagrama muestra otra conexión, en la que el nivel detectado por e
 </p>
 
 #### Diagrama esquemático
+>**Nota**: Patilla larga del diodo conectada en la misma columna que la resistencia, patilla corta del diodo conectada en la misma columna que GND.
+> 
 <p style="text-align: center;">
     <img title="micro:bit" src="./img/circuito_01.png" alt="Micro:bit" />
 </p>
@@ -43,6 +45,9 @@ El siguiente diagrama muestra otra conexión, en la que el nivel detectado por e
 ``` rust
 {{#include src/main.rs}}
 ```
+``` shell
+cargo run
+``` 
 
 #### Explicación del código
 El código es bastante sencillo, en este caso establecemos el P0 como entrada y el P1 como salida. Cuando se detecta que el botón está pulsado, se enciende el LED; cuando se detecta que el botón está suelto, se apaga el LED.
@@ -74,6 +79,10 @@ El mismo que en la sección anterior.
 ``` rust
 {{#include examples/lamp.rs}}
 ```
+
+``` shell
+cargo run --example lamp
+``` 
 
 #### Explicación del código
 En el programa, cuando se detecta por primera vez que se ha pulsado el botón, se espera 10 ms para comprobar si se vuelve a pulsar el botón, con el fin de eliminar el efecto del rebote al pulsarlo. Y si el botón sigue pulsado por segunda vez, se considera que se ha pulsado y que se encuentra en un estado estable. De lo contrario, se considera que se trata de un rebote y se sale de esta comprobación.

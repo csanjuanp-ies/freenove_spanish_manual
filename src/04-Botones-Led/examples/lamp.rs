@@ -3,7 +3,7 @@
 
 use cortex_m_rt::entry;
 use embedded_hal::delay::DelayNs;
-use embedded_hal::digital::{InputPin, OutputPin, StatefulOutputPin};
+use embedded_hal::digital::{InputPin, OutputPin};
 use microbit::Board;
 use nrf52833_hal::{Timer};
 use nrf52833_hal::gpio::Level;
@@ -18,21 +18,28 @@ fn main() -> ! {
     let mut timer = Timer::new(board.TIMER0);
     let mut led_p0 = board.edge.e00.into_pulldown_input();
     let mut led_p1 = board.edge.e01.into_push_pull_output(Level::Low);
+    let mut status:bool = true;
 
     loop {
-        let status:bool = false;
+
         if led_p0.is_low().unwrap() {
-            timer.delay_ms(10_u32);
+            rprintln!("Pulsado");
+            timer.delay_ms(100_u32);
             if led_p0.is_low().unwrap(){
-                status = !status;
                 if status {
+                    rprintln!("On");
+                    status = false;
                     led_p1.set_high().unwrap();
                 } else {
+                    rprintln!("Off");
+                    status = true;
                     led_p1.set_low().unwrap();
                 }
-                while led_p0.is_low().unwrap(){
-                    timer.delay_ms(10_u32);
-                }
+            }
+            rprintln!("fin if");
+            while led_p0.is_low().unwrap(){
+                rprintln!("while");
+                timer.delay_ms(100_u32);
             }
         }
     }

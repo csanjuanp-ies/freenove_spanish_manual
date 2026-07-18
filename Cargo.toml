@@ -6,6 +6,7 @@ members = [
     "src/02-Botones",
     "src/03-Led",
     "src/04-Botones-Led",
+    "src/05-BarraLed",
 
 ]
 

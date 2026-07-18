@@ -3,7 +3,7 @@
 
 use cortex_m_rt::entry;
 use embedded_hal::delay::DelayNs;
-use embedded_hal::digital::{InputPin, OutputPin, StatefulOutputPin};
+use embedded_hal::digital::{InputPin, OutputPin};
 use microbit::Board;
 use nrf52833_hal::{Timer};
 use nrf52833_hal::gpio::Level;
@@ -22,11 +22,11 @@ fn main() -> ! {
     loop {
         timer.delay_ms(1000_u32);
         if led_p0.is_low().unwrap() {
-            rprintln!("Apagando");
-            led_p1.set_low().unwrap();
-        } else {
             rprintln!("Encendiendo");
             led_p1.set_high().unwrap();
+        } else {
+            rprintln!("Apagando");
+            led_p1.set_low().unwrap();
         }
         timer.delay_ms(1000_u32);
     }

@@ -9,3 +9,4 @@
 - [3.- Led](03-Led/README.md)
   - [Estructura de las librerías Rust](03-Led/rust_mb2.md)
 - [4.- Botones y Led](04-Botones-Led/README.md)
+- [5.- Barra de Led](05-BarraLed/README.md)
