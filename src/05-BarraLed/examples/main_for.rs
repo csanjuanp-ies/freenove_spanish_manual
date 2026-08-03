@@ -34,6 +34,7 @@ fn main() -> ! {
         for led in leds.iter_mut() {
             led.toggle().ok();
             timer.delay_ms(500u32);
+            led.toggle().ok();
         }
     }
 }

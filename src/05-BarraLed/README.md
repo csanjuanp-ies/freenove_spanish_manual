@@ -1,6 +1,6 @@
 # Capítulo 5 - Barra de Led
 ## Descripción del proyecto 5.1
-En este proyecto, ytilizamos una barra LED para crear una luz que simula el agua fluyendo.
+En este proyecto, utilizamos una barra LED para crear una luz que simula el agua fluyendo.
 ### Hardware necesario
 <p style="text-align: center;">
     <img title="micro:bit" src="./img/componentes.png" alt="Micro:bit" />
@@ -53,7 +53,7 @@ cargo run
 ``` 
 
 #### Explicación del código
-xxx
+Este código es sencillo, enciende de forma secuencialy apaga cada uno de los pines necesarios dentro de un bucle infinito, usando un retardo de 500 milisegundos.
 
 ### Código fuente (versión dos)
 ``` rust
