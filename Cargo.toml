@@ -8,7 +8,7 @@ members = [
     "src/04-Botones-Led",
     "src/05-BarraLed",
     "src/06-Pwm",
-
+    "src/07-RGBLed"
 ]
 
 [profile.release]
