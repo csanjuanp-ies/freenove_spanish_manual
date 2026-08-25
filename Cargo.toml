@@ -10,6 +10,7 @@ members = [
     "src/06-Pwm",
     "src/07-RGBLed",
     "src/08-NeoPixel",
+    "src/09-Buzzer",
 ]
 
 [profile.release]

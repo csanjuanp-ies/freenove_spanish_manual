@@ -13,3 +13,4 @@
 - [6.- PWM - Cambio de brillo en un led](06-Pwm/README.md)
 - [7.- RGBLed](07-RGBLed/README.md)
 - [8.- NeoPixel](08-NeoPixel/README.md)
+- [9.- Buzzer](09-Buzzer/README.md)
