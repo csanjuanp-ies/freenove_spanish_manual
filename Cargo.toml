@@ -11,6 +11,7 @@ members = [
     "src/07-RGBLed",
     "src/08-NeoPixel",
     "src/09-Buzzer",
+    "src/10-ComunicacionSerie",
 ]
 
 [profile.release]

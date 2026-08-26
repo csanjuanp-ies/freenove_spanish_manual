@@ -578,6 +578,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3"
 
 [[package]]
+name = "serial"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "embedded-hal 1.0.0",
+ "microbit-v2 0.16.0",
+ "nrf52833-hal 0.19.0",
+ "nrf52833-pac",
+ "panic-halt",
+ "panic-rtt-target",
+ "rtt-target",
+ "serial-setup",
+]
+
+[[package]]
 name = "serial-setup"
 version = "0.1.0"
 dependencies = [
