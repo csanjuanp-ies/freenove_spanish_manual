@@ -16,3 +16,4 @@
 - [9.- Buzzer](09-Buzzer/README.md)
 - [10.- Comunicación serie](10-ComunicacionSerie/README.md)
 - [11.- Magnetómetro](11-Magnetometro/README.md)
+- [12.- Acelerómetro](12-Acelerometro/README.md)
