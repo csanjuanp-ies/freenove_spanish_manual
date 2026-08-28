@@ -15,3 +15,4 @@
 - [8.- NeoPixel](08-NeoPixel/README.md)
 - [9.- Buzzer](09-Buzzer/README.md)
 - [10.- Comunicación serie](10-ComunicacionSerie/README.md)
+- [11.- Magnetómetro](11-Magnetometro/README.md)

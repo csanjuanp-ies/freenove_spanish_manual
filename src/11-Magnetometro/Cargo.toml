@@ -1,0 +1,33 @@
+[package]
+name = "magnetometro"
+version = "0.1.0"
+authors = ["Freenove <support@freenove.com>"]
+edition = "2024"
+
+[dependencies]
+cortex-m-rt = "0.7.5"
+panic-halt = "1.0.0"
+panic-rtt-target = "0.2.0"
+rtt-target = "0.6.2"
+microbit-v2 = "0.16.0"
+embedded-hal = "1.0.0"
+libm = "0.2.16"
+lsm303agr = "1.1.0"
+mag-cal = { path = "../99-MagenticCalibration" }
+
+[dependencies.nrf52833-hal]
+version = "0.19.0"
+features = ["rt"]
+
+
+[dependencies.cortex-m]
+version = "0.7.7"
+features = ["inline-asm", "critical-section-single-core"]
+
+[dependencies.nrf52833-pac]
+version = "0.12.2"
+features = ["cortex-m-rt"]
+
+[dependencies.serial-setup]
+version = "0.1.0"
+path = "../serial-setup"

@@ -12,6 +12,9 @@ members = [
     "src/08-NeoPixel",
     "src/09-Buzzer",
     "src/10-ComunicacionSerie",
+    "src/11-Magnetometro",
+
+    "src/99-MagenticCalibration",
 ]
 
 [profile.release]
