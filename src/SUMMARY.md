@@ -17,3 +17,4 @@
 - [10.- Comunicación serie](10-ComunicacionSerie/README.md)
 - [11.- Magnetómetro](11-Magnetometro/README.md)
 - [12.- Acelerómetro](12-Acelerometro/README.md)
+- [13.- Potenciómetro](13-Potenciometro/README.md)

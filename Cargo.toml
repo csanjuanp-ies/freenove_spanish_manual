@@ -14,6 +14,7 @@ members = [
     "src/10-ComunicacionSerie",
     "src/11-Magnetometro",
     "src/12-Acelerometro",
+    "src/13-Potenciometro",
 
     "src/99-MagenticCalibration",
 ]
