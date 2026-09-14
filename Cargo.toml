@@ -15,6 +15,7 @@ members = [
     "src/11-Magnetometro",
     "src/12-Acelerometro",
     "src/13-Potenciometro",
+    "src/14-PotenciometroLed",
 
     "src/99-MagenticCalibration",
 ]

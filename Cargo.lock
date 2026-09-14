@@ -613,6 +613,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "potenciometro_led"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "embedded-hal 1.0.0",
+ "microbit-v2 0.15.1",
+ "nrf52833-hal 0.18.0",
+ "nrf52833-pac",
+ "panic-halt",
+ "panic-rtt-target",
+ "rtt-target",
+ "smart-leds",
+ "smart-leds-trait",
+ "ws2812-nrf52833-pwm",
+]
+
+[[package]]
 name = "proc-macro-utils"
 version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
