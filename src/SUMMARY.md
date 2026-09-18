@@ -19,3 +19,4 @@
 - [12.- Acelerómetro](12-Acelerometro/README.md)
 - [13.- Potenciómetro](13-Potenciometro/README.md)
 - [14.- Potenciómetro y Led](14-PotenciometroLed/README.md)
+- [15.- Sensor de lux](15-SensorLuz/README.md)
