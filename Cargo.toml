@@ -18,6 +18,7 @@ members = [
     "src/14-PotenciometroLed",
     "src/15-SensorLuz",
     "src/16-SensorTemperatura",
+    "src/17-Joystick",
 
     "src/99-MagenticCalibration",
 ]
