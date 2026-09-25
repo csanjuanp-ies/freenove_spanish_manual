@@ -19,6 +19,7 @@ members = [
     "src/15-SensorLuz",
     "src/16-SensorTemperatura",
     "src/17-Joystick",
+    "src/18-LedBarGraph",
 
     "src/99-MagenticCalibration",
 ]
