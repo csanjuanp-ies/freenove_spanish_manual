@@ -1,0 +1,73 @@
+#![no_main]
+#![no_std]
+
+use cortex_m_rt::entry;
+use embedded_hal::delay::DelayNs;
+use microbit::{
+    board::Board,
+    hal::{
+        timer::Timer,
+    },
+};
+use panic_halt as _;
+use crate::utils::ShiftRegister;
+
+
+
+#[entry]
+fn main() -> ! {
+    let board = Board::take().unwrap();
+    let mut timer = Timer::new(board.TIMER0);
+
+    // DS Pin of 74HC595(Pin14)
+    let data_pin = board.edge.e00.into_push_pull_output(microbit::hal::gpio::Level::Low).degrade();
+    // ST_CP Pin of 74HC595(Pin12)
+    let latch_pin = board.edge.e01.into_push_pull_output(microbit::hal::gpio::Level::Low).degrade();
+    // SH_CP Pin of 74HC595(Pin11)
+    let clock_pin = board.edge.e02.into_push_pull_output(microbit::hal::gpio::Level::Low).degrade();
+
+    let numbers = [0xc0, 0xf9, 0xa4, 0xb0, 0x99, 0x92, 0x82, 0xf8, 0x80, 0x90, 0x88, 0x83, 0xc6, 0xa1, 0x86, 0x8e];
+    let mut shift_register = ShiftRegister::new(data_pin, clock_pin, latch_pin);
+    loop {
+        for number in numbers {
+            shift_register.write_byte(number);
+            timer.delay_ms(500u32);
+        }
+    }
+}
+
+mod utils{
+    use embedded_hal::digital::OutputPin;
+    use nrf52833_hal::gpio::{Output, Pin, PushPull};
+
+    // A helper struct to wrap our shift register pins
+    pub struct ShiftRegister {
+        data: Pin<Output<PushPull>>,
+        clock: Pin<Output<PushPull>>,
+        latch: Pin<Output<PushPull>>,
+    }
+
+    impl ShiftRegister {
+        pub fn new(data: Pin<Output<PushPull>>, clock: Pin<Output<PushPull>>, latch: Pin<Output<PushPull>>) -> Self {
+            let mut sr = ShiftRegister { data, clock, latch };
+            let _ = sr.clock.set_high();
+            let _ = sr.latch.set_high();
+            sr
+        }
+
+        pub fn write_byte(&mut self, value: u8) {
+            let _ =self.latch.set_low();
+            for i in (0..8).rev() {
+                if (value & (1 << i)) != 0 {
+                    let _ = self.data.set_high();
+                } else {
+                    let _ = self.data.set_low();
+                }
+                let _ = self.clock.set_high();
+                let _ = self.clock.set_low();
+            }
+            let _ = self.latch.set_high();
+            let _ = self.latch.set_low();
+        }
+    }
+}
