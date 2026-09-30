@@ -21,6 +21,7 @@ members = [
     "src/17-Joystick",
     "src/18-LedBarGraph",
     "src/19-SegmentDisplay",
+    "src/20-LCD1602",
 
     "src/99-MagenticCalibration",
 ]
