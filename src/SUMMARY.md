@@ -25,3 +25,4 @@
 - [18.- Led Bar Graph](18-LedBarGraph/README.md)
 - [19.- Display de segmentos](19-SegmentDisplay/README.md)
 - [20.- Display LCD 1602](20-LCD1602/README.md)
+- [21.- Motor](21-Motor/README.md)

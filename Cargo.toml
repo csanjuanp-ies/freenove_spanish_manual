@@ -22,6 +22,7 @@ members = [
     "src/18-LedBarGraph",
     "src/19-SegmentDisplay",
     "src/20-LCD1602",
+    "src/21-Motor",
 
     "src/99-MagenticCalibration",
 ]
