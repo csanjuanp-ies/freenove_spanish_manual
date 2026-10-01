@@ -46,7 +46,7 @@ En la práctica, el motor suele conectarse al canal 1 y, al enviar diferentes ni
 
 ### Código fuente
 > Si no funciona correctamente, probar a girar 180º el circuito integrado L239D.
-> 
+>
 > Los Pines a usar van a ser P0, P1 y P2. P0 para la lectura del potenciómetro ( capítulo 13) y P1 y P2 para los dos extremos del motor y así poder controlar la dirección del giro.
 
 ``` rust

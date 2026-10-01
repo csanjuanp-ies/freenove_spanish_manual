@@ -1255,6 +1255,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "servo"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "embassy-nrf",
+ "embedded-hal 1.0.0",
+ "microbit-v2 0.16.0",
+ "nrf52833-hal 0.19.0",
+ "nrf52833-pac",
+ "panic-halt",
+ "panic-rtt-target",
+ "rtt-target",
+]
+
+[[package]]
 name = "smallvec"
 version = "1.15.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"

@@ -23,6 +23,7 @@ members = [
     "src/19-SegmentDisplay",
     "src/20-LCD1602",
     "src/21-Motor",
+    "src/22-Servo",
 
     "src/99-MagenticCalibration",
 ]
