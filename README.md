@@ -1,3 +1,4 @@
 # Freenove FNK0071
 Este repo es una traducción al Castellano, usando Rust del paquete FNK0071 de Freenove
-[Freenove FNK0071]([https://www.google.com](https://docs.freenove.com/projects/fnk0071/en/latest/))
+
+[Freenove FNK0071](https://docs.freenove.com/projects/fnk0071/en/latest/)
