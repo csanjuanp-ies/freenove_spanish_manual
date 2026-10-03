@@ -24,7 +24,7 @@ members = [
     "src/20-LCD1602",
     "src/21-Motor",
     "src/22-Servo",
-
+    "src/23-SensorDistancia",
     "src/99-MagenticCalibration",
 ]
 
