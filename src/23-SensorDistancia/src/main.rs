@@ -43,7 +43,7 @@ fn main() -> ! {
 
         rprintln!("echo is high: {}", echo.is_high().unwrap());
         trig.set_high().expect("TODO: panic message");
-        timer.delay_us(10u32); // 10 microsegundos para asegurar el pulso
+        timer.delay_us(15u32); // 15 microsegundos para asegurar el pulso
         trig.set_low().expect("TODO: panic message");
         rprintln!("echo is high: {}", echo.is_high().unwrap());
 
